@@ -151,4 +151,5 @@ for (i in names) {
     society.push(names[i][0])
 }
 
-console.log(society.join(""));
+society = society.sort().join("");
+console.log(society);
