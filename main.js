@@ -93,7 +93,6 @@ while (askNum < "10") {
 }
 
 
-
 // ========== EXERCISE 4: ATTENDANCE ============ //
 
 let guestList = {
@@ -136,11 +135,16 @@ let details = {
     the: 'raindeer'
 }
 
-console.log(`My ${details["my"]} is ${details["is"]} the ${details["the"]}`)
-
+let arr = []
+for (i in details) {
+    arr.push(i);
+    arr.push(details[i]);
+}
+console.log(arr.join(" "))
 
 
 // ========== EXERCISE 7: SECRET GROUP ============ //
+
 
 let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"]
 
